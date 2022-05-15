@@ -3,7 +3,7 @@
 // }
 // console.log(getFullName(true,["kadu"])); // we can pass whatever we want becouse we didnt defined type
 // anyone ca missused our function
-// writing a string infront of name and surname it means we declear the type of name&surname as string 
+// writing a string infront of name and surname it means we declear the type of name&surname as string
 // ():string  "it means function return the string"
 var getFullName = function (name, surname) {
     return name + " " + surname;

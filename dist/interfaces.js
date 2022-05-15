@@ -10,7 +10,7 @@ var User = /** @class */ (function () {
     function User() {
     }
     return User;
-}()); // here is name collesion
+}()); // here is name collesion becouse the name of User interface and User class is same
 var user = {
     myname: "shubham",
     age: 22,
