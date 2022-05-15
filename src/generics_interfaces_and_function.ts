@@ -119,3 +119,59 @@ const himanshu: multipleTypeInterface<{ surname: string }, string[]> = {
 //** enum in ts */
 //enum=enumerable
 
+const statuses = {
+  notstarted:0,
+  inprogress:1,
+  done:2
+}
+console.log(statuses.notstarted) //0
+
+// we can do same with enum
+
+enum Statuses1{
+  notstarted,
+  inprogress,
+  done
+};
+
+console.log(Statuses1.notstarted) //0
+
+//by default notstarted have value 0 and inprogress have value 1 and so on
+
+// we can use enum as value and data type
+
+let peoplestatuses:Statuses1 = Statuses1.done
+
+peoplestatuses = Statuses1.inprogress
+
+console.log(peoplestatuses)
+
+// enum with string 
+
+enum Statuses2{
+  notstarted='sk',
+  inprogress='rk',
+  done='hk'
+};
+
+console.log(Statuses2.done)
+
+// enum with inside Interfaces
+
+
+enum Statuses3{
+  notstarted='sk',
+  inprogress='rk',
+  done='hk'
+};
+
+interface Task{
+  id:string
+  peoplestatus:Statuses3 // now we can provide only Statuses3 enum to peoplestatus inside Task
+}
+
+// we have to use enum we needed constants in our app
+
+
+
+
